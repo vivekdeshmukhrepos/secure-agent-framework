@@ -33,9 +33,9 @@ Prevents the model from leaking:
     
 
 If detected, text is sanitized as:
-```
+ 
 [EMAIL_MASKED]  [PHONE_MASKED]
-```  
+  
 
 ### 🔎 **3\. Model Inversion Defense**
 
@@ -93,19 +93,25 @@ You can view complete logs inside the UI.
 
 ### 🏗️ Project Structure
 ```
-.
-├── app.py                # Streamlit UI
-├── agent/
-│   ├── secure_agent.py   # Core security logic
-│   ├── llm.py            # Wrapper around OpenAI model
-│   └── config.py         # Settings + API keys
-├── components/
-│   ├── tabs.py           # Attack scenario tabs
-│   └── summarizer.py     # Secure summarizer tab
-├── assets/
-│   └── logo.png
-├── requirements.txt
-└── README.md
+. 
+|   app.py
+|   malicious_input.txt
+|   Readme.md
+|   requirements.txt
+|   sample_report.txt
+|   TestCases.txt
+
++---agent
+   |   secure_agent.py
+   |   __init__.py
+   |
++---config
+   |   config.py
+   |   __init__.py
+   |   
++---llm
+    |   agent_llm.py
+    |   __init__.py
 
 ```
 ### 🔧 Installation
@@ -155,7 +161,28 @@ Use TestCases.txt to test this project.
 
 * Layered AI Agent Architecture
 
- 
+### 🏆 Summary: Where this project can be used
+
+ Your Secure Agent can be used in:
+
+* Banking customer support
+
+* Healthcare documentation bots
+
+* Insurance claim automation
+
+* Enterprise copilots
+
+* Internal summarization tools
+
+* Regulated industry AI assistants
+
+* Workflow automation AI
+
+* Chatbot and agent API gateways
+
+* Mobile apps using AI
+
 ---
 
 <p align="center"><strong>Built for learning. Designed for security. Open for contributions.</strong></p>

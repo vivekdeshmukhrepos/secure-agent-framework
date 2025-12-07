@@ -1,6 +1,5 @@
 import re
 from llm import call_llm
-from config import settings
 
 class SecureAgent:
     def __init__(self):
@@ -37,7 +36,7 @@ class SecureAgent:
     def sanitize_model_inversion(self, text: str) -> str:
         lowered = text.lower()
         if "salary" in lowered or "internal policy" in lowered:
-            return "[BLOCKED: Model Inversion Attempt]"
+            return "[BLOCKED:]"
         return text
 
     def sanitize_harmful_output(self, text: str) -> str:

@@ -1,6 +1,5 @@
 import streamlit as st
 from agent import agent
-from config import settings
 
 # ---------------------------------------
 # Streamlit Page Setup
